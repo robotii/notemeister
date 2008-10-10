@@ -1,0 +1,46 @@
+#!/usr/bin/env python
+
+# Filename: notemeister.py
+try:
+	import pygtk
+	pygtk.require('2.0')
+except ImportError:
+	pass
+
+import sys, os, locale, gettext
+import gtk
+
+# Make sure the current system has at least PyGTK 2.3.92 installed
+if not gtk.pygtk_version[1] > 2:
+	print "Notemeister requires PyGTK >= 2.3.92 to be installed! Your version is " + \
+	str(gtk.pygtk_version[0]) + "." + str(gtk.pygtk_version[1]) + "." + str(gtk.pygtk_version[2]) + "."
+	raise SystemExit
+
+import notemeister.notemeister_main as notemeister_main
+
+if os.environ.has_key("NOTEMEISTERI18N"):
+	loc = os.environ["NOTEMEISTERI18N"]
+else:
+	loc = "/usr/share/locale"
+
+try:
+	locale.setlocale(locale.LC_ALL,'')
+except locale.Error:
+	pass
+except ValueError:
+	pass
+
+gettext.bindtextdomain("notemeister", loc)
+gtk.glade.bindtextdomain("notemeister", loc)
+
+try:
+	gtk.glade.textdomain("notemeister")
+except:
+	pass
+
+gettext.textdomain("notemeister")
+gettext.install("gramps", loc, unicode=1)
+
+notemeister_main.NoteMeister()
+
+

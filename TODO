@@ -1,0 +1,13 @@
+
+Notemeister TODO List:
+
+Version 0.2:
+	* fancy up export/import dialogs with headers etc 
+	* tar exported notes?
+	* support for importing/exporting whole tree
+	* properly format the ChangeLog
+
+Version 0.3:
+	* internationalization
+	* drag and drop text file to window creates new note (linked?)
+

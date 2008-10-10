@@ -1,0 +1,20 @@
+
+NOTEMEISTER has the following dependancies:
+	o pygtk 2.2.0
+	o Python 2.3.3
+	o gnome-python 2.0.2
+
+Installation is done using a standard Python setup.py file. Quick
+instructions are:
+
+python setup.py build
+python setup.py install ( as root )
+
+
+You may need to restart gconfd-2 after installing for the first time,
+as gconf doesn't sense changes to the central database. Run
+'gconftool-2 --shutdown' as your normal user, or send it a SIGHUP.
+
+If you are reinstalling or upgrading Notemeister you may need to use
+the --force argument to install, otherwise the old files will not be
+replaced.

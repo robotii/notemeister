@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Notemeister Notes Organizer
+GenericName=Notes Organizer
+Version=0.1
+Comment=Organize small notes in a tree structure
+Exec=notemeister
+Icon=notemeister.svg
+Terminal=false
+Type=Application
+Categories=Application;Utility;
+StartupNotify=true
+

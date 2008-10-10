@@ -1,0 +1,72 @@
+
+Notemeister ChangeLog:
+June 8, 2004
+	* add rename functionality to pulldown menu
+	* make About pic a scaled pixbuf instead of gtk.Image
+	* add window corner pics to various dialogs 
+	* ability to insert current time & date
+
+June 10, 2004 
+	* added welcome screen for when no notes are in tree
+	* add version number in title bar of main window
+	* select parent note in tree on deletion
+	* moved to PyGTK 2.4 (dependancy upgrade)
+	
+June 11, 2004 
+	* added buggy clipboard functions
+	* added export to text file
+
+June 12, 2004
+	* replaced ugly menu/toolbar code with cool new UIManager stuff
+	* added ItemFactory to handle custom icons
+	* added svg icons for Import and Export
+	* implemented importing notes from a text file
+	
+June 13, 2004 
+	* added word wrap mode on a per note basis
+	* implemented some exception handling for the import/export functions
+
+June 14, 2004 
+	* remember tree state between session (selection & expand)
+	* guess note title when importing text file
+	* guess file name when exporting to text file
+	* draw entire window at once at startup (load notes first)
+	* clean up preferences - lose the notebook widget
+	* create note properties dialog with note stats
+	* add properties to 'File' menu and tree context menu
+
+June 15, 2004 
+	* make linked folder icon
+	* double-click on note in tree shows properties
+	* implement file linking
+
+June 18, 2004 
+	* made prefs and properties dialog stop appearing at same time (oops!)
+	* fix tree state recovery so that it actually works
+	* added a Gentoo ebuild
+
+June 19, 2004 
+	* swap OK and CANCEL buttons in "Add Note" dialog
+	* swap OK and CANCEL buttons in "Rename" dialog
+	* disallow resizing of "Add Note" and preferences dialog
+	* add dialog entry activates default response
+	* rename dialog entry activates default response
+	* open Notemeister homepage from Help menu
+
+June 21, 2004 
+	* data (finally) saved and read from XML files
+	* install prefix no longer hardcoded - more portable
+
+June 22, 2004 
+	* cut to clipboard seems to work properly now (Bug #974428)
+	* remove shortcuts conflicting with emacs bindings (Bug #977422)
+	* remove version from window title as per HIG
+	* import/export of "Notemeister Notes" format implemented 
+
+June 23, 2004 
+	* add import/export options to appropriate dialogs
+	* add import/export to appropriate context menus
+
+July  5, 2004 
+	* add variable time for autosave
+

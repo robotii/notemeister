@@ -1,0 +1,91 @@
+<ui>
+	<menubar name='Menubar'>
+		<menu action='FileMenu'>
+			<menuitem action='Add'/>
+			<menuitem action='Rename'/>
+			<separator/>
+			<menuitem action='Remove'/>
+			<separator/>
+			<menu action='Import'>
+				<menuitem action='ImportNM'/>
+				<menuitem action='ImportText'/>
+			</menu>
+			<menu action='Export'>
+				<menuitem action='ExportNM'/>
+				<menuitem action='ExportText'/>
+			</menu>
+			<separator/>
+			<menuitem action='Properties'/>
+			<separator/>
+			<menuitem action='Quit'/>
+		</menu>
+		<menu action='EditMenu'>
+			<menuitem action='Cut'/>
+			<menuitem action='Copy'/>
+			<menuitem action='Paste'/>
+		</menu>
+		<menu action='FormatMenu'>
+			<menuitem action='Bold'/>
+			<menuitem action='Italics'/>
+			<menuitem action='Underline'/>
+		</menu>
+		<menu action='ToolsMenu'>
+			<menuitem action='Wrap'/>
+			<menuitem action='Preferences'/>
+		</menu>
+		<menu action='HelpMenu'>
+			<menuitem action='Website'/>
+			<menuitem action='About'/>
+		</menu>
+	</menubar>
+
+	<popup name='TreeMenu'>
+		<menuitem action='Add'/>
+		<menuitem action='Rename'/>
+		<separator/>
+		<menuitem action='Remove'/>
+			<menu action='Import'>
+				<menuitem action='ImportNM'/>
+				<menuitem action='ImportText'/>
+			</menu>
+			<menu action='Export'>
+				<menuitem action='ExportNM'/>
+				<menuitem action='ExportText'/>
+			</menu>
+		<separator/>
+		<menuitem action='Properties'/>
+	</popup>
+
+	<popup name='ViewMenu'>
+		<menuitem action='Cut'/>
+		<menuitem action='Copy'/>
+		<menuitem action='Paste'/>
+		<menuitem action='SelectAll'/>
+		<separator/>
+			<menu action='Export'>
+				<menuitem action='ExportNM'/>
+				<menuitem action='ExportText'/>
+			</menu>
+		<separator/>
+		<menuitem action='Properties'/>
+	</popup>
+
+	<toolbar name='Toolbar'>
+		<toolitem action='Add'/>
+		<toolitem action='Remove'/>
+		<separator/>
+		<toolitem action='Cut'/>
+		<toolitem action='Copy'/>
+		<toolitem action='Paste'/>
+		<separator/>
+		<toolitem action='Bold'/>
+		<toolitem action='Italics'/>
+		<toolitem action='Underline'/>
+		<separator/>
+		<toolitem action='FontSize'/>
+		<separator/>
+		<toolitem action='Date'/>
+		<toolitem action='Time'/>
+	</toolbar>
+</ui>
+
